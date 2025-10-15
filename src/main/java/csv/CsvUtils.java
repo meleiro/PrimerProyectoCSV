@@ -9,7 +9,7 @@ public class CsvUtils {
     // ya que solo contiene métodos estáticos de utilidad.
     private CsvUtils() { }
 
-    // Ejemplo comentado (NO forma parte del código):
+    // Ejemplo
     // Línea CSV de entrada:
     // Ana, "Petardos,  ""SL"" ", "2300"
     //
