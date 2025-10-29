@@ -1,5 +1,6 @@
 package app;
 
+import csv.CsvTable;
 import csv.CsvUtils;
 
 import java.io.BufferedReader;
@@ -25,6 +26,12 @@ public class AppLeerCsv {
           } catch (IOException e){
               System.err.println("No se pudo asegurar : " + e.getMessage());
           }
+
+          CsvTable table = new CsvTable();
+
+          table.setHeaders();
+
+          table.addRow();
 
 
         //apertura y lectura línea a línea
