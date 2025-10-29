@@ -36,7 +36,6 @@ public class CsvTable {
 
         }
         rows.add(row);
-
     }
     public int size(){
         return rows.size();

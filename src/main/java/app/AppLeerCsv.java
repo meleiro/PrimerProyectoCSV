@@ -1,5 +1,6 @@
 package app;
 
+import csv.CsvPrinter;
 import csv.CsvTable;
 import csv.CsvUtils;
 
@@ -47,10 +48,12 @@ public class AppLeerCsv {
 
             List<String> headers = CsvUtils.parseCSVLine(linea);
 
+            table.setHeaders(headers);
+
             while (( linea = br.readLine()) != null  ){
 
                 List<String> campos = CsvUtils.parseCSVLine(linea);
-                //table.addRow(campos)
+                table.addRow(campos);
             }
 
         } catch (NoSuchFileException e){
@@ -63,7 +66,7 @@ public class AppLeerCsv {
 
         //Mostrar el contenido en una tabla
 
-
+        CsvPrinter.print(table);
 
 
 
