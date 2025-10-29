@@ -29,9 +29,7 @@ public class AppLeerCsv {
 
           CsvTable table = new CsvTable();
 
-          table.setHeaders();
 
-          table.addRow();
 
 
         //apertura y lectura línea a línea
